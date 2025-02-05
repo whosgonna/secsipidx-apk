@@ -1,0 +1,6 @@
+*.sw[a-z]
+*.rsa
+.env
+/docs
+/pkgs/*
+!/pkgs/.gitinclude
