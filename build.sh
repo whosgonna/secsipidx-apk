@@ -9,6 +9,7 @@ IMAGE_NAME=secsipid_apk_builder:alpine-${ALPINE_VERSION}
 echo "Building ${IMAGE_NAME}"
 
 docker build \
+    --no-cache \
     --build-arg ALPINE_VERSION=${ALPINE_VERSION} \
     -t ${IMAGE_NAME} \
     .

@@ -24,6 +24,8 @@ COPY --chown=builder:builder APKBUILD /home/builder/secsipid
 
 WORKDIR /home/builder/secsipid
 
+ENV CGO_ENABLED=1
+
 #FROM alpine:3.19
 
 #COPY --from=secsipidbuilder /go/src/github.com/asipto/secsipidx/csecsipid/* /csecsipid/
